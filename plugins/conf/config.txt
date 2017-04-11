@@ -1,0 +1,8 @@
+<task>
+[global]
+task_type = 1
+
+<network>
+[global]
+host=10.15.16.3
+port=60006

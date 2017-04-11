@@ -1,0 +1,9 @@
+impacket==0.9.13
+paramiko==1.15.2
+pymssql==2.1.1
+redis==2.10.3
+requests==2.10.0
+pycrypto==2.6.1
+IPy==0.83
+python_ldap==2.4.27
+pymongo==2.4
