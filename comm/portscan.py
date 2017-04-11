@@ -323,10 +323,11 @@ class PortScan(object):
                 except Exception as e:
                     print e
                     # 处理被识别为http的mongo
-            for ip in self.ip_dict['http']:
-                if str(ip).split(':')[1] == '27017':
-                    self.ip_dict['http'].remove(ip)
-                    self.ip_dict['mongodb'].append(ip)
+            if "http" in self.ip_dict:
+                for ip in self.ip_dict['http']:
+                    if str(ip).split(':')[1] == '27017':
+                        self.ip_dict['http'].remove(ip)
+                        self.ip_dict['mongodb'].append(ip)
 
     def run(self, is_ping, threads, ips, filename):
         """
